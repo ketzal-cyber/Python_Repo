@@ -5,7 +5,7 @@ class Fichero:
     def __init__(self, nombre):
         self.nombre = nombre
 
-    def leerFichero():
+    def leerFichero(self):
         fichero = open(self.nombre,"rt")
         texto = fichero.read()
         return texto
