@@ -1,12 +1,15 @@
 # Creación de modulo con las funciones de manejo de fichero
 import os
+
+# Definición de clase
 class Fichero:
 
+    # Metodo Constructor
     def __init__(self, nombre):
         self.nombre = nombre
 
     #metodo para leer ficheros
-    def leerFichero():
+    def leerFichero(self):
         fichero = open(self.nombre,"rt")
         texto = fichero.read()
         return texto
