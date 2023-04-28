@@ -4,12 +4,10 @@ import EjercicioSeccion
 # Regreso el apuntador fichero
 def nameFile():
     nombreFile = input("Ingresa el nombre del Fichero ")
-    fichero = EjercicioSeccion.Fichero(nombreFile+".txt")
-    return fichero
+    return EjercicioSeccion.Fichero(nombreFile+".txt")
 
 def guardarArchivo(apuntador):
-    texto = input("Introduce un texto para agregar al fichero ")
-    apuntador.guardarFichero(texto)
+    apuntador.guardarFichero(input("Introduce un texto para agregar al fichero "))
 
 def writeMoreLine(apuntador):
     textIncluir = input("Introduce una linea más para agregar al fichero ")
