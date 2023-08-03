@@ -7,6 +7,7 @@ cadena = "Tienes algo que contar. Te enseñaremos a hacerlo con estilo en tu pro
 expresion = re.search("contar",cadena)
 # Retornaria 
     # -> <re.Match object; span=(16, 22), match='contar'>
+    # si no encuantr no devuelve nada
 
 #evaluacion de match
 if(expresion):
@@ -53,3 +54,4 @@ patron = re.split("\s", texto2)
 # sub sustituir todas las coincidencias de una cadena
 sustitue = re.sub("roja","gris", texto2)
 print(sustitue)
+## -> ['El', 'ordenador', 'es', 'gris', '', 'cuesta', '6000']
