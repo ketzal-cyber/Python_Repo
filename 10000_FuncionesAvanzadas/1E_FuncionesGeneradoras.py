@@ -9,7 +9,7 @@ for num in range(11):
 def numPares(maximo):
     for numero in range(maximo):
         if (numero % 2 == 0):
-            yield numero
+            yield numero    # yield pone en pausa la iteraccion y crea un iterable
 
 maximo = 11
 for pares in numPares(maximo):
