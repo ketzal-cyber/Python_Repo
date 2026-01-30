@@ -13,7 +13,13 @@ result = list(mapeo)
 print(result)
 # -> [4, 8, 12, 16]
 
+listNums = [3,5,7,9]
+listResult = list(map(multiplicar,listNums))
+print("Mediante una funcion")
+print(listNums)
+
+
 # forma de hacerlo con una lambda
 lista_resultado = list(map(lambda numero: numero * 2, listNumeros))
 print("Mediante lambda")
-print(lista_resultado)
+print(lista_resultado) 
